@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![screen shot of full screen webpage](https://github.com/Eileenpk/Intro-Component-With-Sign-Up-Form/blob/main/introComponent/src/assets/ScreenshotFull.png)
-![screen shot of mobile webpage](https://github.com/Eileenpk/Intro-Component-With-Sign-Up-Form/blob/main/introComponent/src/assets/ScreenshotMobile.png)
+![screen shot of full screen webpage](https://github.com/Eileenpk/Intro-Component-With-Sign-Up-Form/blob/main/src/assets/ScreenshotFull.png)
+![screen shot of mobile webpage](https://github.com/Eileenpk/Intro-Component-With-Sign-Up-Form/blob/main/src/assets/ScreenshotMobile.png)
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Eileenpk/Intro-Component-With-Sign-Up-Form)
