@@ -1,0 +1,262 @@
+/*  General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  --main-color: #FF7979;
+  --second-color:  #5E54A4;
+  --third-color: #38CC8B;
+  --font-color: #FFFFFF;
+  --second-font-color: #3D3B48;
+  --footer-font-color: #A6A1CF;
+  --font-family:  'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./assets/bg-intro-mobile.png') var(--main-color) ;
+}
+
+.App {
+  min-height: 100vh;
+  width: 23.4375rem;
+  padding: 5.5rem 1.5rem 4.25rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Typography  */
+
+.App {
+  color: var(--font-color);
+  font-family: var(--font-family);
+  font-size: 1rem;
+}
+
+.header--title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.29px;
+}
+
+.header--text {
+  font-weight: 500;
+  line-height: 1.652rem;
+}
+
+.form--header_text {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.652rem;
+  letter-spacing: 0.27px;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+input {
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.25px;
+  color: var(--second-font-color);
+}
+
+.form--missing_input::placeholder {
+color: var(--main-color);
+
+}
+.text-danger {
+  color: var(--main-color);
+  font-size: 0.6875rem;
+  font-style: italic;
+  line-height: 1rem;
+  text-align: right;
+  margin-top: -0.625rem;
+  margin-bottom: 1.1875rem;
+  position: relative;
+}
+
+.form--error_img {
+  position: absolute;
+  bottom: 2.375rem;
+  right: 0.9375rem;
+}
+
+.form--btn {
+  letter-spacing: 1px;
+  color: var(--font-color);
+  line-height: 1.625rem;
+  font-size: 0.9375rem;
+}
+
+input,
+.form--btn {
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+
+.form--footer {
+  color: var(--footer-font-color);
+  font-size: 0.6875rem;
+  line-height: 1.3125rem;
+}
+
+.form--footer_alt_color_text {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+/* Header */
+  .header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header--title {
+    padding-bottom: 0.375rem;
+    margin-bottom: 1rem;
+  }
+
+  .header--text {
+    margin-bottom: 4rem;
+  }
+
+/* Form styles */
+
+form {
+  background: var(--font-color);
+  border-radius: 0.625rem;
+  box-shadow: 0px 8px 0px 0px #00000025;
+  padding: 1.5rem;
+}
+
+.form--header_wapper {
+  height: 5.5rem;
+  background: var(--second-color);
+  border-radius: 0.625rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 1.125rem 4.125rem;
+  box-shadow: 0px 8px 0px 0px #00000025;
+
+}
+input {
+  border-radius: 0.3125rem;
+  border: 1px solid #DEDEDE;
+  text-indent: 2rem;
+  width: 100%;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--second-color);
+}
+
+.form--btn {
+  height: 3.5rem;
+  width: 100%;
+  background: var(--third-color);
+  border: none;
+  border-radius: 0.3125rem;
+  box-shadow: 0px -4px 0px 0px #00000017 inset;
+  margin-bottom: 0.5rem;
+}
+
+.form--footer {
+  width: 83%;
+  text-align: center;
+  margin: auto;
+}
+
+/* hover / active states */
+
+.form--btn:hover,
+.form--btn:active {
+  background: #77E2B3;
+}
+
+/* media Q */
+
+@media (min-width: 600px) {
+  body {
+    background: url('./assets/bg-intro-desktop.png') var(--main-color);
+  }
+}
+
+@media (min-width: 1440px) {
+  /* general styles */
+  .App {
+    width: 69.375rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+  
+  /* header */
+  .header {
+    width: 32.8125rem;
+    text-align: left;
+    margin-right: 2.8125rem;
+    padding-bottom: 0.475rem;
+  }
+  
+  .header--title {
+    font-size: 3.125rem;
+    line-height: 3.4375rem;
+    letter-spacing: -0.52px;
+    margin-top: 4.6875rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .header--text {
+    margin-top: -1.25rem;
+  }
+  
+  /* form */
+  .form {
+    width: 33.75rem;
+    margin-top: 0;
+  }
+  .form--header_wapper {
+    height: 3.75rem;
+  }
+
+  form {
+    min-height: 29.625rem;
+    max-height: 35.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5rem;
+  }
+
+  input {
+    margin-bottom: 1.25rem;
+  }
+
+  input,
+  .form--btn {
+    width: 28.75rem;
+  }
+
+  .form--footer {
+    margin-top: 0.1875rem;
+  }
+}
